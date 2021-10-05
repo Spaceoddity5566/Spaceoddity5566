@@ -1,0 +1,149 @@
+.subscribe{//訂閱欄
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: $maincolor;
+    margin: 0 auto;
+    align-items: center;
+    
+    .sub-slogan{//甜蜜郵件
+        display: flex;
+        padding: 40px 0px;
+        justify-content: space-around;
+        align-items: center;
+        width: 40%;
+    
+        .logo-light{
+        width: 40px;
+        padding-right: 20px;
+        }
+
+        p{
+        font-size: 24px;
+        color: $sidecolor;
+        }
+    }
+    .mailbox{//信箱欄
+        width: 40%;
+        align-items:center;
+        justify-content: space-between;
+        height: 56px;
+        background: $sidecolor;
+        display: flex;
+        img{
+            padding: 5px;
+        }
+        input{//////填入欄的樣式
+            border: none;
+            background: $sidecolor;
+            width: 70%;
+            height: 50%;
+        }
+        .arrow-go{//送出的箭頭
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 56px;
+            width: 56px;
+            background: #FFE180;
+            
+        }
+
+    }
+}
+
+.footer{
+    width: 100%;
+    background: $sidecolor;
+    justify-content:space-around;
+    
+    .footer-info{/*Logotype+info*/
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        .footer-logo{
+            width: 60%;
+            img{
+                padding-top:20px;
+                padding-bottom:30%;
+                width: 40%;
+            }
+        
+            ul{
+                padding-bottom: 20px;
+            }
+            li{
+            color:$maincolor;
+            font-size: 16px;
+            line-height: 1.8;
+            
+            }
+        }
+        
+    
+    }   
+    .footer-slogan{//直式標語
+        
+        writing-mode: vertical-rl;
+        padding-top: 20px;
+            h2{
+                line-height: 1.8;
+                color: $maincolor;
+                text-align: left;
+                font-size: 24px;
+            }
+        }
+
+    .footer-copyright{
+        display: flex;
+        width: 100%;
+        align-items: center;
+
+        padding-bottom: 40px;
+        
+        p{
+            padding-right: 90px;
+            font-size: 16px;
+            }
+        .footer-icon{
+            width: 40%;
+            margin: 0 auto;
+            
+                img{
+                    width: 30px;
+                    padding-right: 10%;
+                    padding-bottom: 20px;
+                    
+                }
+            
+        }
+        
+    }
+}
+
+//自適應內容
+@media screen and (max-width:768px) {
+.subscribe{
+    padding-bottom: 10%;
+    flex-direction: column;//標語+填寫欄直排
+    .sub-slogan {
+        width: 60%;
+    }
+    .mailbox{
+    width: 60%;
+    
+    }
+}
+.footer-info{
+
+    .footer-slogan{
+        display: none;
+    }
+}
+.footer-copyright{
+    flex-direction: column;
+        text-align: center;
+    
+    
+}
+}//MediaScreen

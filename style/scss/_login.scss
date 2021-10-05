@@ -1,0 +1,124 @@
+
+.login-outframe{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    padding: 60px 0px;
+}
+.login-inframe{
+    width: 390px;
+    height:auto;
+    background: $maincolor;
+    
+    
+    .member-title{
+        text-align: center;
+        h2{
+            color: $sidecolor;
+        }
+    }
+}
+.member-keyin{
+    max-width: 84%;
+    background: $maincolor;
+    margin: 0 auto;
+    
+    
+    .account-box{
+        padding:8px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        background: $sidecolor;
+        margin-bottom: 24px;
+        input{
+            border: none ;
+            height: 22px;
+            width: 165px;
+            background: $sidecolor;
+        }
+        .account-img{
+            width: 24px;
+            height: 24px;
+            background: $sidecolor;
+        }
+    
+    }
+    
+    .remember-me{
+        font-size: 16px;
+        display: flex;
+        padding-left: 40px;
+        p{
+        color: $sidecolor;
+        }
+    }
+}
+.login-btn{
+    max-width: 100%;
+    background: #FFE180;
+    text-align: center;
+    
+    a{
+        text-decoration: none;
+        display: block;
+    }
+    &:hover{
+        
+        background:$sidecolor ;
+    }
+}
+
+.social-frame{
+    background: $sidecolor;
+    width: 390px;
+    
+    .social-title{
+        font-size: 18px;
+        text-align: center;
+        h2{
+        color:darken($sidecolor,40%);
+        
+        }
+    }
+   
+    .social-link{
+        width: 84%;
+        margin: 0 auto;
+        padding: 8px 0px;
+        
+        .social-a{
+            display: flex;
+            text-decoration: none;
+            justify-content: center;
+            text-align: center;
+            background: #fff;
+            height:56px ;
+            img{
+                max-width: 40%;
+                
+            }
+            &:hover{
+                background: #FFE180;
+            }
+        }
+    
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    .login-outframe{
+        display: block;
+        .login-inframe{
+            margin: 0 auto;
+            margin-bottom: 24px;
+        }
+        .social-frame{
+            margin: 0 auto;
+            padding-bottom: 16px;
+            
+        }
+    }
+}
+    

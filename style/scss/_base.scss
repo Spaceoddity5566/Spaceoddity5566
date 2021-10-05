@@ -1,0 +1,28 @@
+*{
+    font-family: roboto,'noto sans tc',helvitica;
+    color: $maincolor ;
+    
+}
+img{
+  max-width: 100%;
+  max-height: auto;
+  vertical-align: middle;
+}
+.pt8{padding-top: 8px;}
+.pt16{padding-top: 16px;}
+.pt24{padding-top: 24px;}
+.pb8{padding-bottom: 8px;}
+.pb16{padding-bottom: 16px;}
+.pb24{padding-bottom: 24px;}
+.pr8{padding-right: 8px;}
+.pr16{padding-right: 16px;}
+.pr24{padding-right: 24px;}
+.pl16{padding-left: 16px;}
+.pd16{padding: 16px;}
+.fz24{font-size: 24px;}
+.font-b{font-weight: bold;}
+
+.container{//大包包
+  max-width:940px;
+  margin: 0 auto;
+}

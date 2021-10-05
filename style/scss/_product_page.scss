@@ -1,0 +1,185 @@
+
+
+
+
+.banner{//首頁圖
+    padding-bottom: 60px;
+  img{
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+    }
+}
+
+
+.mainwrap{/*分類欄+商品欄*/
+    max-width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidemenu{/*分類欄*/
+    h2{
+        width: 300px;
+        height: 65px;
+        background: $maincolor;
+        margin: 0 auto;
+        line-height: 65px;
+        text-align: center;
+        color: #fff;
+        font-size: 24px;
+    }
+}
+
+.category{
+    width: 298px;
+    background: #fff;
+    border: 1px solid $sidecolor;
+    margin: 0 auto;
+    font-size: 24px;
+    text-align: center;
+    line-height: 65px;
+    a{
+        text-decoration: none;
+        color: $maincolor;
+        display: block;
+        &:hover{
+            background: $sidecolor;
+            color: $maincolor;
+        }
+    }
+}
+.productbox{
+    width: 620px;
+    
+    ul{
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;/*斷行多行*/
+    }
+}
+.dsrtbox{
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+    /*定位精選tag與愛心tag*/
+    padding-bottom: 20px;
+    .imgbox{
+        
+        display: flex;
+        /*消除圖片與info中間的px*/
+    }
+    .select{
+        background: $maincolor;
+        width: 36px;
+        height: 106px;
+        position: absolute;
+        left: 20px;
+        top: 0px;
+        p{
+            font-display: auto;
+            line-height: 20px;
+            padding: 10px;
+            font-size: 16px;
+            text-align: center;
+            color: #fff;
+        }
+    }
+    .love{
+        position: absolute;
+        top: 19px;
+        right: 22px;
+    }
+    .dsrtinfo{
+        width: 99%;
+        justify-content: space-between;
+        display: flex;
+        border: 1px solid $sidecolor;
+    }
+    .dsrtname{
+        font-size: 20px;
+        color: $maincolor;
+        line-height: 56px;
+        width: 173px;
+        p{
+            text-align: center;
+        }
+    }
+    .prize{
+        font-size: 20px;
+        border-left: 1px solid $sidecolor;
+        color: $maincolor;
+        line-height: 56px;
+        width: 127px;
+        p{
+            text-align: center;
+        }
+    }
+    .cartlink{
+        width: 100%;
+        height: 65px;
+        background: $sidecolor;
+        text-align: center;
+        line-height: 65px;
+        a{
+            text-decoration: none;
+            color: $maincolor;
+            font-size: 24px;
+            font-weight: bold;
+            display: block;
+            &:hover{
+                background: $maincolor;
+                color: #fff;
+            }
+        }
+    }
+}
+.pagebox{
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: flex-end;
+    ul{
+        display: flex;
+    }
+    .pgstyle{
+        width: 65px;
+        border: 1px solid $sidecolor;
+        line-height: 65px;
+        text-align: center;
+        a{
+            text-decoration: none;
+            color: $maincolor;
+            font-size: 20px;
+            display: block;
+            &:hover{
+                color: #fff;
+                background: $maincolor;
+            }
+        
+        }
+    }
+}
+
+
+
+
+
+//自適應內容
+@media screen and (max-width:768px) {
+
+
+    .mainwrap{
+        display: block;
+    }
+
+    .productbox {
+    width: 100%;
+    
+    }
+
+    .pagebox{
+        justify-content: center;
+    }
+}

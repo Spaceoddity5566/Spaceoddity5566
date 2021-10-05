@@ -1,0 +1,87 @@
+
+.header{
+    display: flex;
+    margin: 0 auto;
+    max-width: 924px;
+    justify-content: space-between;
+    padding-top: 30px;
+    position: relative;//設定為父元素
+    .logo{
+      width: 40%;
+    }
+  }
+  
+  .hdrmenu{//頁首連結
+    display: flex;
+    padding: 20px;
+    
+    
+    ul{
+      display: flex;
+      
+    }
+    li{
+      padding-left: 20px;
+      justify-content: space-between;
+      text-align: center;
+      
+    }
+    a{
+      font-size: 16px;
+      display: block;
+      text-decoration: none;
+      color:$maincolor;
+      padding: 10px;
+      
+        &:hover{
+        color:#fff;
+        background:$maincolor;
+        }
+  }
+  }
+  
+  .the-burger{//漢堡圖，網頁版不顯示
+      display: none;
+  }
+
+  @media screen and (max-width:768px) {
+    .header{
+      width: 100%;
+      justify-content: space-around;
+      display: flex;
+      margin: 0 auto;
+      padding: 20px 10px;
+      align-items: center;//logo跟漢堡置中
+
+    }
+    .logo{
+        width: 100%;
+    }
+
+    .hdrmenu{
+        padding: 0px;
+        
+        a{
+            padding: 0px;//取消漢堡的padding
+        }
+        ul{//列表選單不顯示
+            display: none;
+        }
+          .cart-icon{
+          display: block;
+          
+          }
+        }  
+        
+    
+
+    .the-burger{
+        display: flex;
+        a{
+          text-decoration: none;
+        }
+        a:hover{
+          background: $maincolor;
+        }
+    }
+  }

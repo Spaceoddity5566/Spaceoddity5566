@@ -1,0 +1,188 @@
+
+.cart-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.itemframe{//品項外框
+    
+    width: 620px;
+    flex-wrap: wrap;
+    .cart-title{
+        color:$maincolor ;
+        text-align: center;
+        background: $sidecolor;
+    }
+
+    .item-box{//品項欄位
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+    border-bottom: 1px solid $sidecolor;
+        .fdimg{//用background放圖片的div
+        width: 110px;
+        height: 110px;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        background-image: url(https://bit.ly/2zBDAxX) ;
+        }
+        .fdimg-nobg{//用img放圖片的div
+            width: 110px;
+            height: 110px;
+            img{
+                object-fit: cover;
+                width: 100%;
+                max-height: auto;
+            }
+        }
+        .dsrt-info{//甜點資訊
+            display: flex;
+        }
+        .number-box{//數量框框
+        width: 144px;
+        display: flex;
+        border-top: 1px solid $sidecolor;
+        border-right: 1px solid $sidecolor;
+        border-bottom: 1px solid $sidecolor;
+        align-items: center;
+            .number{
+            border-left: 1px solid $sidecolor;
+            width: 48px;
+            text-align: center;
+            line-height: 48px;
+                a{
+                text-decoration: none;
+                display: block;
+                line-height: 48px;
+                }
+                &:hover{
+                    background: $maincolor;
+                    color: $sidecolor;
+                }
+            }
+        }//數量框框
+    .trashcan{
+    width: 24px;
+    height: 24px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-image: url(https://tingminitime.github.io/sweetaste/img/trash-solid.svg);
+        a{
+        width: 24px;
+        height: 24px;
+        display: block;
+        }
+        &:hover{
+            height: 35px;
+        }
+    }
+
+    }//品項欄位
+}//品項外框
+
+  .list-outframe{//訂單摘要外框
+    width: 300px;
+    height: 258px;
+    background: $maincolor;
+  
+    .list-inframe{
+      max-width: 85%;
+      margin: 0 auto;
+      padding-bottom: 16px;
+      
+    .listtitle{
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 1px solid $sidecolor;
+        padding: 16px 0px 20px 0px;
+        h2{
+            color:$sidecolor;
+        }
+        
+        }
+    .list-content{
+        display: flex;
+        justify-content: space-between;
+        padding:16px 0px 8px 0px;
+        p{
+            color:$sidecolor;
+        }
+      }
+  
+    }
+        .checkout-box{
+        background: #FFE180;
+        text-align: center;
+          a{
+            display: block;
+            color: $maincolor;
+            text-decoration: none;
+          }
+        
+      }
+  }
+
+  //自適應內容
+  @media screen and (max-width:768px) {
+    .cart-container{
+        display: block;
+        
+        .itemframe{//購物品項外框
+            margin: 0 auto;
+            max-width: 80%;
+        .item-box{//品項欄位
+            flex-wrap: wrap;
+            display: flex;
+            
+            .fdimg{
+            display: block;
+            max-width: 100%;
+            }
+            .dsrt-info{
+                display: block;
+            }
+            .sub{
+                max-width: 100%;
+                padding-left: 79%;
+                padding-top: 24px;
+                font-size: 24px;
+                display: flex;
+                border-top: 1px solid $sidecolor;
+                
+            }
+            .trashcan{
+                display: none;
+            }
+        }
+        }
+        
+        
+    }
+    .list-outframe{//訂單摘要
+        padding-top: 24px;
+        margin: 0 auto;
+        width: 70%;
+        background: #fff;
+        .list-inframe{
+            width: 100%;
+            
+            .listtitle{
+                background: $sidecolor;
+                h2{
+                color: $maincolor;
+                }
+            }
+            .list-content{
+                p{
+                    color: $maincolor;
+                }
+                
+            }
+        }
+    }
+}
