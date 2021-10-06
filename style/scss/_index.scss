@@ -1,111 +1,41 @@
 
-.header{
-    display: flex;
-    margin: 0 auto;
-    width: 100%;
-    justify-content: space-between;
-    padding-top: 30px;
-    position: relative;//設定為父元素
-    .logo{
-      width: 40%;
-    }
-  }
-  
-  .hdrmenu{//頁首連結
-    display: flex;
-    padding: 20px;
-    
-    
-    ul{
-      display: flex;
-      
-    }
-    li{
-      padding-left: 20px;
-      justify-content: space-between;
-      text-align: center;
-      
-    }
-    a{
-      font-size: 16px;
-      display: block;
-      text-decoration: none;
-      color:#3F5D45;
-      padding: 10px;
-      
-        &:hover{
-        color:#fff;
-        background:#3F5D45;
-        }
-  }
-  }
-  
-  .the-burger{//漢堡圖，網頁版不顯示
-      display: none;
-  }
-
-  @media screen and (max-width:768px) {
-    .header{
-      width: 100%;
-      justify-content: space-around;
-      display: flex;
-      margin: 0 auto;
-      align-items: center;//logo跟漢堡置中
-
-    }
-    .logo{
-        width: 100%;
-    }
-
-    .hdrmenu{
-        padding: 0px;
-        a{
-            padding: 0px;//取消漢堡的padding
-        }
-        ul{//列表選單不顯示
-            display: none;
-        }
-    }
-
-    .the-burger{
-        display: flex;
-    }
-}
 .home-banner{
     width: 100%;
     height: 496px;
     background: url(https://bit.ly/2OhbMHr) no-repeat center;
-    background-size:920px;
+    background-size:100%;
     margin: 0 auto;
-    }
-.hotmenu{
-    ul{
-        max-width: 780px;
-        margin: auto 0 auto;
-        justify-content: center;
+    
+        .hotmenu{
         align-items: center;
-        padding-bottom: 60px;
+        justify-content: center;
+        padding-top: 45%;
         display: flex;
-    }
-    
-    
-    .home-li{
-        backdrop-filter: blur(15px);
-        width: 30%;
-        height: 256px;
-        writing-mode: vertical-rl;
-        text-align: center;
-      
-        a{
-            
-            text-decoration: none;
-            display: block;
-            font-size: 24px;
-            padding: 1px;
-            
-        }
         
-    }
+            .home-li{
+                backdrop-filter: blur(10px);
+                height: 256px;
+                writing-mode: vertical-rl;
+                max-width: 100%;
+                
+                .home-a{
+                    background:#3F5D45 ;
+                    opacity: .5;
+                    padding-left: 40%;
+                    padding-right: 40%;
+                }
+                a{
+                    text-align: center;
+                    text-decoration: none;
+                    display: block;
+                    color: #fff;
+                    &:hover{
+                        background: #FFE180;
+                    }
+                }
+        
+        }
+}
 }
 
 .subscribe{//訂閱欄

@@ -116,6 +116,14 @@ img {
   font-weight: bold;
 }
 
+.border-l {
+  border-left: 1px #fff solid;
+}
+
+.border-r {
+  border-right: 1px #fff solid;
+}
+
 .container {
   max-width: 940px;
   margin: 0 auto;
