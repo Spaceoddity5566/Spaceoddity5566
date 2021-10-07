@@ -1,0 +1,86 @@
+.productbox{
+    
+    
+    ul{
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: no-wrap;/*斷行多行*/
+    }
+}
+.dsrtbox{
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+    /*定位精選tag與愛心tag*/
+    
+    
+    .imgbox{
+        
+        display: flex;
+        /*消除圖片與info中間的px*/
+    }
+    .select{
+        background: $maincolor;
+        width: 36px;
+        height: 106px;
+        position: absolute;
+        left: 20px;
+        top: 0px;
+        p{
+            font-display: auto;
+            line-height: 20px;
+            padding: 10px;
+            font-size: 16px;
+            text-align: center;
+            color: #fff;
+        }
+    }
+    .love{
+        position: absolute;
+        top: 19px;
+        right: 22px;
+    }
+    .dsrtinfo{
+        width: 99%;
+        justify-content: space-between;
+        display: flex;
+        border: 1px solid $sidecolor;
+    }
+    .dsrtname{
+        font-size: 20px;
+        color: $maincolor;
+        line-height: 56px;
+        width: 173px;
+        p{
+            text-align: center;
+        }
+    }
+    .prize{
+        font-size: 20px;
+        border-left: 1px solid $sidecolor;
+        color: $maincolor;
+        line-height: 56px;
+        width: 127px;
+        p{
+            text-align: center;
+        }
+    }
+    .cartlink{
+        width: 100%;
+        height: 65px;
+        background: $sidecolor;
+        text-align: center;
+        line-height: 65px;
+        a{
+            text-decoration: none;
+            color: $maincolor;
+            font-size: 24px;
+            font-weight: bold;
+            display: block;
+            &:hover{
+                background: $maincolor;
+                color: #fff;
+            }
+        }
+    }
+}

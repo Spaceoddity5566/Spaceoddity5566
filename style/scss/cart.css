@@ -75,6 +75,10 @@ img {
   padding-top: 24px;
 }
 
+.pt20pa {
+  padding-top: 20%;
+}
+
 .pb8 {
   padding-bottom: 8px;
 }
@@ -85,6 +89,10 @@ img {
 
 .pb24 {
   padding-bottom: 24px;
+}
+
+.pb10pa {
+  padding-bottom: 10%;
 }
 
 .pr8 {
@@ -107,8 +115,20 @@ img {
   padding: 16px;
 }
 
+.fz16 {
+  font-size: 16px;
+}
+
 .fz24 {
   font-size: 24px;
+}
+
+.mt25pa {
+  margin-top: 25%;
+}
+
+.mb10pa {
+  margin-bottom: 10%;
 }
 
 .font-b {
