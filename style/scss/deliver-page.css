@@ -99,6 +99,10 @@ img {
   padding-bottom: 10%;
 }
 
+.pb20pa {
+  padding-bottom: 20%;
+}
+
 .pr8 {
   padding-right: 8px;
 }
@@ -149,6 +153,14 @@ img {
 
 .mb10pa {
   margin-bottom: 10%;
+}
+
+.mg16 {
+  margin: 16px;
+}
+
+.mg32 {
+  margin: 32px;
 }
 
 .font-b {
@@ -311,6 +323,7 @@ img {
   height: 56px;
   background: #EAF0ED;
   border: none;
+  text-indent: 20px;
 }
 
 .deliver-outframe .de-inframe .inputbox .between-box, .deliver-outframe .de-inframe .inputbox .area-box {
@@ -481,6 +494,55 @@ img {
 .shoptotal .list-outbox .list-content .buyimg-waffle {
   background: url(https://bit.ly/2zKOP7w) no-repeat center;
   background-size: 100%;
+}
+
+.invoice-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.invoice-select .invoice-e-btn, .invoice-select .invoice-p-btn {
+  width: 380px;
+  background: #3F5D45;
+  height: 55px;
+  border: 1px solid #EAF0ED;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.invoice-select .invoice-e-btn a, .invoice-select .invoice-p-btn a {
+  display: block;
+  line-height: 55px;
+}
+
+.invoice-select .invoice-p-btn {
+  background: #EAF0ED;
+}
+
+.invoice-select .invoice-p-btn:hover {
+  background: #3F5D45;
+  color: #EAF0ED;
+}
+
+@media screen and (max-width: 768px) {
+  .de-inframe {
+    margin: 0 auto;
+  }
+  .shoptotal {
+    display: none;
+  }
+  .nxtbtn {
+    margin: 32px 0px;
+  }
 }
 
 .subscribe {

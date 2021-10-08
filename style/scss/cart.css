@@ -99,6 +99,10 @@ img {
   padding-bottom: 10%;
 }
 
+.pb20pa {
+  padding-bottom: 20%;
+}
+
 .pr8 {
   padding-right: 8px;
 }
@@ -149,6 +153,14 @@ img {
 
 .mb10pa {
   margin-bottom: 10%;
+}
+
+.mg16 {
+  margin: 16px;
+}
+
+.mg32 {
+  margin: 32px;
 }
 
 .font-b {

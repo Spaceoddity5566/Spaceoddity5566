@@ -35,6 +35,7 @@
                 height: 56px;
                 background: $sidecolor;
                 border: none;
+                text-indent: 20px;
             }
             .between-box{
                 display: flex;
@@ -55,6 +56,7 @@
                 
                 input{
                 width: 410px;
+                
                 }
                 
             }
@@ -66,7 +68,7 @@
         }
         
     }
-    .nxtbtn{
+    .nxtbtn{//下一步按鈕
         background: $sidecolor;
         .disapoint{
             display: none;
@@ -108,7 +110,7 @@
     }
    
     
-    .goaround{
+    .goaround{//再去逛逛
         background: #FFE180;
         
         left: 33.3%;
@@ -138,7 +140,7 @@
 .shoptotal{
     display: block;
     flex-direction: column;
-
+//付款成功頁面
 
     .list-outbox{//訂單摘要外框
         width: 300px;
@@ -191,5 +193,46 @@
             }
             
         }
+    }
+}
+
+//發票Page—————————————————————————————
+.invoice-select{
+    display: flex;
+    
+.invoice-e-btn{
+    width: 380px;
+    background: $maincolor;
+    height: 55px;
+    border: 1px solid $sidecolor;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    a{
+        display: block;
+        line-height: 55px;
+    }
+}
+.invoice-p-btn{
+    @extend .invoice-e-btn;
+    background: $sidecolor;
+    &:hover{
+        background: $maincolor;
+        color: $sidecolor;
+    }
+}
+}
+
+
+@media screen and (max-width: 768px){
+    .de-inframe{
+        margin: 0 auto;
+    }
+    .shoptotal{
+        display: none;
+    }
+    .nxtbtn{
+        margin: 32px 0px;
     }
 }
