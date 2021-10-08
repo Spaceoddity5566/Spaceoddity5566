@@ -5,7 +5,7 @@
 }
 img{
   max-width: 100%;
-  max-height: auto;
+  max-height: 100%;
   vertical-align: middle;
 }
 .pt8{padding-top: 8px;}
@@ -15,6 +15,7 @@ img{
 .pb8{padding-bottom: 8px;}
 .pb16{padding-bottom: 16px;}
 .pb24{padding-bottom: 24px;}
+.pb32{padding-bottom: 32px;}
 .pb10pa{padding-bottom: 10%;}
 .pr8{padding-right: 8px;}
 .pr16{padding-right: 16px;}
@@ -23,7 +24,15 @@ img{
 .pd16{padding: 16px;}
 
 .fz16{font-size: 16px;}
+.fz20{font-size: 20px;}
 .fz24{font-size: 24px;}
+.fz36{font-size: 36px;}
+.fcmain{
+  color: $maincolor;
+}
+.fcside{
+  color: $sidecolor;
+}
 
 .mt25pa{margin-top: 25%;}
 .mb10pa{margin-bottom: 10%;}

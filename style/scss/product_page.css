@@ -60,7 +60,7 @@ table {
 
 img {
   max-width: 100%;
-  max-height: auto;
+  max-height: 100%;
   vertical-align: middle;
 }
 
@@ -92,6 +92,10 @@ img {
   padding-bottom: 24px;
 }
 
+.pb32 {
+  padding-bottom: 32px;
+}
+
 .pb10pa {
   padding-bottom: 10%;
 }
@@ -120,8 +124,24 @@ img {
   font-size: 16px;
 }
 
+.fz20 {
+  font-size: 20px;
+}
+
 .fz24 {
   font-size: 24px;
+}
+
+.fz36 {
+  font-size: 36px;
+}
+
+.fcmain {
+  color: #3F5D45;
+}
+
+.fcside {
+  color: #EAF0ED;
 }
 
 .mt25pa {

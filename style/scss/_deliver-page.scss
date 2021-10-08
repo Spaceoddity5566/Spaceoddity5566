@@ -1,0 +1,195 @@
+
+.deliver-outframe{
+    justify-content: space-between;
+    display: flex;
+    max-width: 85%;
+    margin: 0 auto;
+    .de-inframe{
+        width: 412px;
+        background: $maincolor;
+        padding: 0px 24px;
+        
+        .de-titlebox{
+            display: flex;
+            justify-content: space-between;
+            
+            .de-title{
+                
+                h2{
+                color: $sidecolor;
+                }
+            }
+            .title-img{
+                width: 50%;
+                img{
+                    object-fit: contain;
+                    max-width: initial;
+                    vertical-align: initial;
+                }
+            }
+            
+        }
+        .inputbox{
+            input{
+                width: 186px;
+                height: 56px;
+                background: $sidecolor;
+                border: none;
+            }
+            .between-box{
+                display: flex;
+                justify-content: space-between;
+                
+            }
+            .area-box{
+               @extend .between-box;
+               align-items:bottom;
+            }
+            .address-box{
+                input{
+                    width: 410px;
+
+                }
+            }
+            .card-input{
+                
+                input{
+                width: 410px;
+                }
+                
+            }
+            .card-3number{
+                input{
+                    width: 100%;
+                }
+            }
+        }
+        
+    }
+    .nxtbtn{
+        background: $sidecolor;
+        .disapoint{
+            display: none;
+        }
+        a{
+            display: block;
+            display: flex;
+            text-decoration: none;
+            justify-content: center;
+            color: $maincolor;
+            text-align: center;
+            line-height: 65px;
+            &:hover{
+                background: #FFE180;
+                color: #FFE180;
+                .disapoint{
+                display: block;
+                padding-right: 20%;
+            
+                }
+            }
+        }
+    }
+    
+}
+//付款成功頁面
+.succes-main{
+    background: url(https://bit.ly/2P7GhNd) no-repeat center;
+    background-size: 100%;
+    max-width: 100%;
+    height: 460px;
+    position: relative;
+    .title-frame{
+    width: 220px;
+    margin: 0 auto;
+    position: absolute;
+    top: 20%;
+    left: 37.5%;
+    }
+   
+    
+    .goaround{
+        background: #FFE180;
+        
+        left: 33.3%;
+        top: 55%;
+        position: absolute;
+        width: 300px;
+        
+        a{  
+            max-width: 100%;
+            text-decoration: none;
+            color: $maincolor;
+            display: block;
+            display: flex;
+            justify-content: center;
+            line-height: 65px;
+        }
+        &:hover{
+            
+            background: $sidecolor;
+            
+        }
+    }
+
+}
+
+//付款成功頁面
+.shoptotal{
+    display: block;
+    flex-direction: column;
+
+
+    .list-outbox{//訂單摘要外框
+        width: 300px;
+        
+        border: 1px solid $sidecolor;
+    
+        .listtitle{
+            font-weight: bold;
+            text-align: center;
+            line-height: 48px;
+            background: $sidecolor;
+            h2{
+                color:darken($sidecolor,30%);
+                }
+        
+        }
+        .list-bg{
+            max-width: 85%;
+            max-height: 80%;
+            margin: 0 auto;
+            padding-bottom: 16px;
+            background: #fff;
+        }
+        .list-content{
+            
+            max-width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding:16px 0px 8px 0px;
+            align-items: center;
+            p{
+                color:darken($sidecolor,30%);
+            }
+            .buyimg-muse{
+                width: 120px;
+                height: 80px;
+                object-fit:cover;
+                background: url(https://bit.ly/2QvsT63) no-repeat center;
+                background-size: 100%;
+            }
+            .buyimg-cake{
+                @extend .buyimg-muse;
+                background: url(https://bit.ly/2zBDAxX) no-repeat center;
+                background-size: 100%;
+            }
+            .buyimg-waffle{
+                @extend .buyimg-muse;
+                background: url(https://bit.ly/2zKOP7w) no-repeat center;
+                background-size: 100%;
+            }
+            
+        }
+    }
+}

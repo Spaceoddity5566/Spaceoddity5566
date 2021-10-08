@@ -116,12 +116,18 @@
   
     }
         .checkout-box{
-        background: #FFE180;
         text-align: center;
+        
           a{
             display: block;
             color: $maincolor;
+            line-height:55px ;
             text-decoration: none;
+            background: $sidecolor;
+            &:hover{
+                color: $maincolor;
+                background: #FFE180;;
+            }
           }
         
       }
