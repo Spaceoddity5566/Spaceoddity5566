@@ -5,10 +5,10 @@
     max-width: 85%;
     margin: 0 auto;
     .de-inframe{
-        width: 412px;
+        flex:1;
         background: $maincolor;
         padding: 0px 24px;
-        
+        margin: 0 auto;
         .de-titlebox{
             display: flex;
             justify-content: space-between;
@@ -19,7 +19,7 @@
                 color: $sidecolor;
                 }
             }
-            .title-img{
+            .title-img{//流程示意圖
                 width: 50%;
                 img{
                     object-fit: contain;
@@ -30,7 +30,8 @@
             
         }
         .inputbox{
-            input{
+            
+            input{//輸入欄位
                 width: 186px;
                 height: 56px;
                 background: $sidecolor;
@@ -45,17 +46,17 @@
             .area-box{
                @extend .between-box;
                align-items:bottom;
+               max-width: 100%;
             }
             .address-box{
                 input{
-                    width: 410px;
-
+                    width: 100%;
                 }
             }
             .card-input{
                 
                 input{
-                width: 410px;
+                width: 100%;
                 
                 }
                 
@@ -98,7 +99,8 @@
 .succes-main{
     background: url(https://bit.ly/2P7GhNd) no-repeat center;
     background-size: 100%;
-    max-width: 100%;
+    //max-width: 100%;
+    flex:1;
     height: 460px;
     position: relative;
     .title-frame{
@@ -225,7 +227,9 @@
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and(min-width:375px) and (max-width: 768px){
+    
+    
     .de-inframe{
         margin: 0 auto;
     }

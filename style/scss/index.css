@@ -287,46 +287,58 @@ img {
 }
 
 .home-banner .hotmenu {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 80%;
   padding-top: 45%;
+  margin: 0 auto;
 }
 
 .home-banner .hotmenu .home-li {
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   height: 256px;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  max-width: 100%;
-}
-
-.home-banner .hotmenu .home-li .home-a {
-  background: #3F5D45;
-  opacity: .5;
-  padding-left: 40%;
-  padding-right: 40%;
-}
-
-.home-banner .hotmenu .home-li a {
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  color: #fff;
+  margin: 1px;
 }
 
 .home-banner .hotmenu .home-li a:hover {
   background: #FFE180;
   color: #3F5D45;
+}
+
+.home-a {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background-color: rgba(63, 93, 69, 0.75);
+  color: #fff;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-decoration: none;
+  line-height: 256px;
+}
+
+.li-today {
+  background: url(https://bit.ly/2Dwoxd7) no-repeat center;
+  background-size: 100%;
+}
+
+.li-pop {
+  background: url(https://bit.ly/2Dwoxd7) no-repeat center;
+  background-size: 100%;
+}
+
+.li-new {
+  background: url(https://bit.ly/2Dwoxd7) no-repeat center;
+  background-size: 100%;
 }
 
 .index-content {
@@ -416,7 +428,7 @@ img {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 768px) {
   .index-content {
     display: block;
     background: #EAF0ED;

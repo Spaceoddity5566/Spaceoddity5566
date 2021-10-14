@@ -289,9 +289,12 @@ img {
 }
 
 .deliver-outframe .de-inframe {
-  width: 412px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   background: #3F5D45;
   padding: 0px 24px;
+  margin: 0 auto;
 }
 
 .deliver-outframe .de-inframe .de-titlebox {
@@ -339,14 +342,15 @@ img {
   -webkit-box-align: bottom;
       -ms-flex-align: bottom;
           align-items: bottom;
+  max-width: 100%;
 }
 
 .deliver-outframe .de-inframe .inputbox .address-box input {
-  width: 410px;
+  width: 100%;
 }
 
 .deliver-outframe .de-inframe .inputbox .card-input input {
-  width: 410px;
+  width: 100%;
 }
 
 .deliver-outframe .de-inframe .inputbox .card-3number input {
@@ -388,7 +392,9 @@ img {
 .succes-main {
   background: url(https://bit.ly/2P7GhNd) no-repeat center;
   background-size: 100%;
-  max-width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   height: 460px;
   position: relative;
 }
@@ -533,7 +539,7 @@ img {
   color: #EAF0ED;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 768px) {
   .de-inframe {
     margin: 0 auto;
   }
